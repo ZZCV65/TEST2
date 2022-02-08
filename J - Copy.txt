@@ -91,6 +91,11 @@ function DiscordLib:ToggleUI()
     end
 end
 
+ScreenGui.Parent = game.CoreGui
+ScreenGui.Name = LibName
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
 function DiscordLib:Window(text)
 	local currentservertoggled = ""
 	local minimized = false
