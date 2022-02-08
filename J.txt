@@ -87,10 +87,10 @@ Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 function DiscordLib:ToggleUI()
-    if game.CoreGui[LibName].Enabled then
-        game.CoreGui[LibName].Enabled = false
+    if game.CoreGui.Discord.Enabled then
+        game.CoreGui.Discord.Enabled = false
     else
-        game.CoreGui[LibName].Enabled = true
+        game.CoreGui.Discord.Enabled = true
     end
 end
 
