@@ -87,12 +87,17 @@ Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 function DiscordLib:ToggleUI()
-    if game.CoreGui.Discord.Enabled then
-        game.CoreGui.Discord.Enabled = false
+    if game.CoreGui[LibName].Enabled then
+        game.CoreGui[LibName].Enabled = false
     else
-        game.CoreGui.Discord.Enabled = true
+        game.CoreGui[LibName].Enabled = true
     end
 end
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.Name = LibName
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 function DiscordLib:Window(text)
 	local currentservertoggled = ""
