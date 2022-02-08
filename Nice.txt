@@ -10,10 +10,8 @@ local Section = Tab:NewSection("Not Have Now")
 
 
 local Tab = Window:NewTab("Script")
-local Section = Tab:NewSection("Admin")
-Section:NewButton("CMD-X", "Run Admin CMD-X", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
-end)
+local Section = Tab:NewSection("Script")
+
 Section:NewButton("UNIVERSAL AIMBOT/ESP", "Run UNIVERSAL AIMBOT/ESP", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/UNIVERSAL.lua"))()
 end)
