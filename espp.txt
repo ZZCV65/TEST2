@@ -3,7 +3,7 @@
 local ESP = {
     Enabled = false,
     Boxes = true,
-    BoxShift = CFrame.new(0,-0.5,0),
+    BoxShift = CFrame.new(0,-0.25,0),
 	BoxSize = Vector3.new(4,6,0),
     Color = Color3.fromRGB(0, 255, 0),
     FaceCamera = false,
